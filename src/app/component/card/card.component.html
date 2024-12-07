@@ -1,0 +1,21 @@
+<div class="card-container" *ngIf="!selectedCard">
+    <div class="card" *ngFor="let image of images" (click)="selectCard(image)">
+      <img [src]="image.src" alt="{{ image.title }}" class="card-img">
+      <div class="card-body">
+        <h3>{{ image.title }}</h3>
+        <p>{{ image.description }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Show related images when a card is selected -->
+  <div class="related-images" *ngIf="selectedCard">
+    <button class="back-button" (click)="clearSelection()">&#8592; Back</button>
+    <h2>{{ selectedCard.title }}</h2>
+    <div class="related-image-container">
+      <div class="related-card" *ngFor="let img of selectedCard.relatedImages">
+        <img [src]="img" alt="Related image" class="related-img">
+      </div>
+    </div>
+  </div>
+  
