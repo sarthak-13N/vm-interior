@@ -1,3 +1,17 @@
-<app-card></app-card>
-<router-outlet></router-outlet>
-
+<nav class="navbar">
+    <div class="logo">VM-Interior Studio</div>
+    <!-- Hamburger Menu Button -->
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <span>&#9776;</span>
+    </button>
+    <!-- Navigation Links -->
+    <ul [class.active]="menuOpen">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+      <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+      <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  

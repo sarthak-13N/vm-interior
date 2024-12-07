@@ -1,0 +1,112 @@
+/* Main container for service details */
+.service-detail-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Details content section */
+  .details-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Images section */
+  .images-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .detail-img {
+    width: 48%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .detail-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* General container styling */
+  .container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Headings and paragraphs */
+  .container h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #333366;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container h2 {
+    font-size: 2.2rem;
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  .container p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    line-height: 1.8;
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  /* Animation for smooth appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-detail-container {
+      padding: 15px;
+    }
+  
+    .detail-img {
+      width: 100%;
+    }
+  
+    .container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .container p {
+      font-size: 1.2rem;
+    }
+  }
+  
